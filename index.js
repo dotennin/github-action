@@ -611,7 +611,7 @@ const runTestsUsingCommandLine = async () => {
   debug(`with concatenated command prefix: ${cmd.join(' ')}`)
 
   // push each CLI argument separately
-  cmd.push('cypress')
+  cmd.push('node_modules/.bin/cy2')
   cmd.push('run')
 
   if (component) {
